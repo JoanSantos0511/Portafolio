@@ -189,22 +189,23 @@ body {
 }
 
 .tech-icons {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  margin: 0 auto; 
-  max-width: 900px; 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 por fila */
+  justify-items: center; /* centra cada ícono */
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .tech-icons img {
-  width: 20%; 
-  height: auto; 
+  width: 120px;      /* más grandes */
+  height: 120px;
+  object-fit: contain;
   transition: transform 0.3s ease;
-  margin-bottom: 30px; 
 }
 
 .tech-icons img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 /* Estilo general para el apartado de misión y visión */
 #mision-vision {
